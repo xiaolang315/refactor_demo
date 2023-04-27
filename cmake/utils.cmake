@@ -1,0 +1,7 @@
+function(add_all_subdir)
+    foreach(DIR ${ARGN})
+        if(IS_DIRECTORY ${DIR})
+            add_subdirectory(${DIR})
+        endif()
+    endforeach()
+endfunction(add_all_subdir)
